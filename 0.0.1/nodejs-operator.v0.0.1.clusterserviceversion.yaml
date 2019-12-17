@@ -8,7 +8,26 @@ metadata:
   namespace: placeholder
 spec:
   apiservicedefinitions: {}
-  customresourcedefinitions: {}
+  customresourcedefinitions: 
+    owned:
+      - name: nodejs.demo.example.com
+        displayName: Nodejs
+        kind: Nodejs
+        version: v1alpha1
+        description: Nodejs
+        resources:
+          - version: v1
+            kind: Deployment
+          - version: v1
+            kind: Service
+          - version: v1
+            kind: ReplicaSet
+          - version: v1
+            kind: Pod
+          - version: v1
+            kind: Secret
+          - version: v1
+            kind: ConfigMap
   description: Placeholder description
   displayName: Nodejs Operator
   install:
@@ -138,5 +157,4 @@ spec:
   maturity: alpha
   provider:
     name: Example
-    url: www.example.com
   version: 0.0.1
