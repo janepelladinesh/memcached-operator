@@ -50,7 +50,7 @@ spec:
                 - /usr/local/bin/ao-logs
                 - /tmp/ansible-operator/runner
                 - stdout
-                image: quay.io/openlabs_operator/kube-operator:operator
+                image: quay.io/openlabs_operator/kube-operator:operators
                 imagePullPolicy: Always
                 name: ansible
                 resources: {}
