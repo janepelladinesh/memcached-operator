@@ -10,7 +10,7 @@ spec:
   apiservicedefinitions: {}
   customresourcedefinitions: 
     owned:
-      - name: nodejs.demo.example.com
+      - name: nodejs.node.example.com
         displayName: Nodejs
         kind: Nodejs
         version: v1alpha1
